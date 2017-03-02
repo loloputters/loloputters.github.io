@@ -1,0 +1,117 @@
+<html>
+<head>
+		<meta charset="UTF-8">
+		<title>Social Media</title>
+		<link rel="stylesheet" href="css/sns.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	  <link rel="stylesheet" href="/resources/demos/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+		<script>
+		$(document).ready(function(){
+				$(".liketext, .retweettext, .snaptext, .reacttext").hide();
+
+				$(".like").dblclick(function(){
+						$(".liketext").fadeToggle();
+						$(".retweettext, .snaptext, .reacttext").hide();
+				});
+				$(".retweet").click(function(){
+						$(".retweettext").fadeToggle();
+						$(".liketext, .snaptext, .reacttext").hide();
+				});
+				$(".snap").mouseup(function(){
+		        $(".snaptext").fadeOut();
+		    });
+		    $(".snap").mousedown(function(){
+		        $(".snaptext").fadeIn();
+						$(".liketext, .retweettext, .reacttext").hide();
+		    });
+				$(".react").hover(function(){
+						$(".reacttext").fadeToggle();
+						$(".retweettext, .snaptext, .liketext").hide();
+				});
+		});
+
+		</script>
+
+</head>
+<body>
+		<div id="container">
+	  	<h1>Social Media</h1>
+				<div class="smintro">
+					<p>Today, Internet users from all over the world utilize and access
+						varieties of social media and Social Network Services (SNS) as a
+						fundamental of their personal networking, relationship collaboration,
+						transferring and sharing of knowledge within communities.
+						<p>With such a large expansion of communication comes consequences,
+							in which taking the <a href="finale.html">next steps</a> to a
+							safer online environment have become drastically more important.</p>
+				</div>
+			</div>
+		<div id="social">
+		<table>
+			<tr>
+				<td>
+				<a href="#" class="like"><img src="images/like.svg"></img></a>
+			</td>
+			<td>
+				<a href="#" class="retweet"><img src="images/retweet.svg"></a>
+			</td>
+			<td>
+				<a href="#" class="snap"><img src="images/snap.svg"></a>
+			</td>
+			<td>
+				<a href="#" class="react"><img src="images/react.svg"></a>
+			</td>
+		</tr>
+	</table>
+	<div class="liketext">
+		<h3>INSTAGRAM</h3>
+		Cyberbullying in Instagram can happen in different
+		ways, including posting a humiliating image of someone
+		else by perhaps editing the image, posting mean or hateful
+		comments, aggressive captions or hashtags, or creating fake
+		profiles pretending to be someone else-24% of users have reporting being
+		harassed on Instagram.
+		<p>Instagram CEO Kevin Systrom recently announced as of this past summer, <thead>
+			company is "taking the next step," to protect its users from online abuse
+			using a "key moderation tool." This allows users to filter out comments
+			that contain words or phrases they find offensive.</p>
+	</div>
+	<div class="retweettext">
+		<h3>TWITTER</h3>
+		A study by British Think Tank Demos, used a small sample of British celebrities,
+		journalists, and politicians whose Twitter timelines were tracked over two weeks.
+		The only category in which women had received more Twitter
+		abuse than men was in the category of journalism, more than 5% of tweets being
+		sent to female journalists and TV presenters versus less than 2% sent to males
+		were abusive. It is also ¾ of abusive tweets came from men, and about 40% of
+		abusive tweets to women were sent by other women, however she does not account that if 40% of abusive
+		tweets are from women, the other 60% are still sent from men.
+	</div>
+	<div class="snaptext">
+		<h3>SNAPCHAT</h3>
+		One of the newer platforms to hit mainstream social media, Snapchat, has
+		managed to grow a healthy 150 million daily users. A study done by Ditch the Label,
+		The Wireless Report, states that 7 out of 10 respondents of ages 13-25 who have
+		received online abuse do not report it as they do not think the issue is serious enoough.
+		However, the issues include hacking, death and physical assault threats, and exposure
+		of information.
+	</div>
+	<div class="reacttext">
+		<h3>FACEBOOK</h3>
+		70% of social media users claim that they use Facebook daily. Of these daily
+		Facebook users, 80% of them have said to have experienced online harassment
+		on Facebook. 69% of them knew their harassers in real life, 36% knew them only
+		knew them online, while 25% did not know their harassers at all.
+		<p>In February of 2016, Facebook responded to these statistics in which it
+		launched a Suicide Prevention tool. The tool works by asking the user to flag
+		and report posts from friends that have caused concern.These posts will then
+		be reviewed by a special team at Facebook, with help options sent to those
+		the reviewers deem to be struggling.</p>
+	</div>
+</div>
+
+</body>
+</html>

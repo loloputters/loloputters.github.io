@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>World Wide Web</title>
+		<link rel="stylesheet" href="css/interwebs.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	  <link rel="stylesheet" href="/resources/demos/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script>
+		$(document).ready(function() {
+
+		$('input').bind("enterKey",function(e){
+			$(".info").fadeIn(200);
+			});
+			$('input').keyup(function(e){
+				if(e.keyCode == 13)
+					{
+  				$(this).trigger("enterKey");
+					}
+				});
+		});
+		</script>
+  </head>
+  <body>
+		<div id="container">
+	  <h1>To create an account, please enter your name or a username!</h1>
+		<br><br>
+		<input type="text">
+		<h2>To proceed hit enter</h2>
+		<div class="info">
+		<p>If your Internet account name can be considered to feminine, you
+		would be 96% more likely to receive a message containing threats and/or
+		sexually abusive content.</p>
+		<p>Social media platforms have become the mainstream space to express
+		personal viewpoints for ordinary people, so the emotional context and
+		comment are easy to appear on social media sites, and these platforms
+		provide more chances for cyberbullying to happen.</p>
+		<p>As a result of the popularization of <a href="sns.html">social media</a>, 
+		cyberbullying is likely to happen to everybody, and everyone can be
+		the abuser.</p>
+		</div>
+		</div>
+  </body>
+</html>
