@@ -1,0 +1,556 @@
+html {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #98d6de;
+	font-family: 'open_sanslight', Helvetica, sans-serif;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* NAVIGATION */
+
+nav {
+    margin: 30px 0px 0px 50px;
+    height: 100px;
+    width: 60px;
+    float: left;
+    position: fixed;
+    z-index: 999;
+}
+
+nav img{
+    min-width: 100%;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+}
+
+nav li {
+    margin-top: 20px;
+    position: relative;
+}
+
+.logo {
+    height: auto;
+    float: left;
+    margin-bottom: 20px;
+}
+
+nav a {
+    padding: 0px 7px 0px 8px;
+    color: #197c75;
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 0.9em;
+    text-align: left;
+    text-decoration: none;
+    letter-spacing: 3px;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out; 
+}
+
+nav a:hover {
+    color: #ffffff;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out; 
+}
+
+nav a:active {
+    text-decoration: underline;
+}
+
+/* NAVIGATION END */
+
+p {
+}
+
+main {
+    width: 100%;
+    margin: auto;
+}
+
+#home {
+    max-width: 850px;
+    height: 450px;
+    margin: auto;
+    position: relative;
+    padding: 120px 0px 0px 150px;
+}
+
+#about {
+    max-width: 100%;
+    background-image: url('../images/aboutbg.svg');
+    background-repeat: no-repeat;
+    height: 800px;
+    margin: auto;
+    margin-top: 150px;
+    position: relative;
+}
+
+#goodies {
+    max-width: 900px;
+    height: 600px;
+    margin: auto;
+    padding-left: 150px;
+    position: relative;
+}
+
+.aboutcont {
+    width: 40%;
+    height: 340px;
+    margin: auto;
+    top: 190px;
+    position: relative;
+    text-align: center;
+}
+
+.info {
+    margin: auto;
+    font-size: 0.85em;
+    font-family: "Open Sans", "Avenir", "Arial", sans-serif;
+    line-height: 1.4em;
+    color: #1d3648;
+    float: left;
+}
+
+#goodies .info {
+    margin: -30px auto 30px auto;
+}
+
+.gtitle {
+    font-family: "big_johnregular", "Helvetica", "Arial", sans-serif;
+    font-size: 2.8em;
+    width: 400px;
+    padding: 13px 0px 10px 0px;
+    color: #98d6de;
+    position: relative;
+    background-color: #ef5329;
+    text-align: center;
+    margin: 100px auto 0px auto;
+}
+
+.goodiecont {
+    float: left;
+    width: 100%;
+    margin: auto;
+}
+
+.donut, .cupcake, .cookie {
+    width: 25%;
+    padding: 60px 30px 0px 30px;
+    float: left;
+    position: relative;
+}
+
+.goodiecont img {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.homecont {
+    max-width: 60%;
+    height: 500px;
+    float: left;
+    margin-top: -30px;
+}
+
+#home img {
+    background-repeat: none;
+    max-width: 35%;
+    float: left;
+    margin-right: 5%;
+    position: relative;
+    min-width: 120px;
+}
+
+h1 {
+    font-family: "big_johnregular", "Helvetica", "Arial", sans-serif;
+    font-size: 4em;
+    color: #ef5329;
+    max-width: 100%;
+    float: left;
+}
+
+h2 {
+    font-family: "big_johnregular", "Helvetica", "Arial", sans-serif;
+    font-size: 2.8em;
+    width: 100%;
+    color: #ef5329;
+    display: inline-block;
+    text-align: center;
+    margin: 10px auto;
+}
+
+
+/*
+#goodies h2 {
+    width: 50%;
+    padding: 13px 0px 10px 0px;
+    color: #98d6de;
+    margin: auto;
+    float:none;
+    position: relative;
+    background-color: #ef5329;
+}
+*/
+
+h3 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 2em;
+    color: #3ebab1;
+    margin-top: -30px;
+    float: left;
+}
+
+h4 {
+    font-family: "Quicksand", "Helvetica", sans-serif;
+    font-size: 1.7em;
+    color: #ef5329;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.prodtitle {
+    font-family: "big_johnregular", "Helvetica", "Arial", sans-serif;
+    font-size: 2.8em;
+    width: 400px;
+    padding: 13px 30px 10px 30px;
+    color: #98d6de;
+    background-color: #ef5329;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#contact {
+    max-width: 900px;
+    height: 580px;
+    margin: auto;
+    margin-top: 230px;
+    position: relative;
+    padding-left: 150px;
+}
+
+.contacont {
+    width: 100%;
+    padding-top: 75px;
+    height: 400px;
+}
+
+#contact img {
+    width: 65%;
+    float: left;
+    margin-right: 5%;
+    padding-top: 0px;
+}
+
+#contact h3, #contact h4, #contact h5 {
+    float: left;
+    position: relative;
+    width: 100%;
+    margin: 20px auto 0px auto;
+    font-size: 1.8em;
+}
+
+#contact h4, #contact h5 {
+    color: #ef5329;
+    font-size: 1.1em;
+    text-align: left;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+#contact h5 {
+    color: #063834;
+    font-family: "Quicksand", "Helvetica", sans-serif;
+}
+
+.continfo {
+    width: 30%;
+    float: left;
+    position: relative;
+}
+
+.social {
+    margin-top: 15px;
+    width: 100%;
+    float: left;
+}
+
+.social img {
+    max-width: 20%;
+}
+
+.sec {
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+    #home {
+        max-width: 60%;
+        padding-left: 200px;
+    }
+    
+    #about {
+        background-position: 0px;
+    }
+    
+    .aboutcont {
+        min-width: 400px;
+        margin-top: -70px;
+    }
+    
+    .aboutcont h2 {
+        font-size: 1.9em;
+        margin-top: 70px;
+    }
+    
+    .aboutcont .info {
+        font-size: 0.75em;
+    }
+    
+    #contact {
+        height: 700px;
+    }
+    #contact img {
+        width: 100%;
+        max-width: 700px;
+        padding-left: 8%;
+    }
+    
+    .continfo {
+        padding-left: 8%;
+        width: 100%;
+        max-width: 700px;
+    }
+    
+    .sec {
+        margin: 20px 20px 0px 0px;
+        width: 30%;
+        float: left;
+    }
+
+    #contact h3, #contact h4, #contact h5 {
+        width: 100%;
+        margin: auto;
+        display: inline-block;
+    }
+    
+    .social {
+        width: 100%;
+        float: left;
+    }
+
+    #contact .social img {
+        width: 25%;
+        float: left;
+        padding: 0px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    
+    #about {
+        background-image: none;
+    }
+    
+    .floaties, .floaties2 {
+        margin-top: 200px;
+        background-image: url("../images/floatie.svg");
+        width: 100%;
+        height: 200px;
+        background-repeat: no-repeat;
+    }
+    
+    .floaties2 {
+        background-image: url("../images/floatie2.svg");
+    }
+    
+    .aboutcont {
+        margin-top: -200px;
+    }
+    
+    .aboutcont h2 {
+        font-size: 2.4em;
+        margin-top: -400px;
+    }
+    
+    .aboutcont .info {
+        font-size: 0.85em;
+    }
+    
+    #home {
+        padding-left: 0px;
+    }
+    
+    h1 {
+        font-size: 3em;
+    }
+    
+    h3 {
+        max-width: 500px;
+        margin-left: -200px;
+        margin-top: 10px;
+    }
+    
+    #goodies {
+        height: 630px;
+        padding-left: 0px;
+    }
+    
+    #contact {
+        max-width: 600px;
+        padding: 0px;
+    }
+    
+    nav {
+        display: none;
+    }
+    
+    #contact img, .continfo, .sec {
+        padding: 0;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    h3 {
+        margin-left: 0px;
+        margin-top: 0;
+        font-size: 1.6em;
+    }
+    
+    #home {
+        margin-top: 130px;
+        height:  300px;
+    }
+    
+    .homecont {
+        max-width: 100%;
+    }
+    
+    #home img {
+        margin-top: -210px;
+        padding-top: 0px;
+        float: left;
+    }
+    
+    #goodies {
+        height: 1150px;
+    }
+    
+    .gtitle {
+    font-size: 2.4em;
+    width: 350px;
+    margin-bottom: 50px;
+    }
+    
+    .goodiecont {
+        padding: 0px;
+        margin-left: 0px;
+        float: none;
+    }
+    
+    .goodiecont img {
+        width: 35%;
+        min-width: 100px;
+    }
+
+    .donut, .cupcake, .cookie {
+        width: 70%;
+        padding: 0px;
+        margin: 0px auto 150px auto;
+        float: none;
+    }
+    
+    #contact {
+        margin-top: 0px;
+        height: 640px;
+    }
+    
+    h1 {
+        float: left;
+    }
+    
+    .continfo {
+        padding-left: 0;
+        width: 100%;
+        max-width: 700px;
+    }
+    
+    .sec {
+        margin: 20px 1px;
+        width: 33%;
+        float: left;
+    }
+
+    #contact h3 {
+        font-size: 1.1em;
+    }
+    
+    #contact h4, #contact h5 {
+        font-size: 0.8em;
+    }
+
+    #contact .social img {
+        width: 20%;
+    }
+      
+}
+
+@media screen and (max-width: 610px) {
+    
+    .sec, #contact h3, #contact h4, #contact h5 {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+    
+    .social {
+        width: 50%;
+        margin: auto;
+        float: none;
+    }
+
+
+    #contact .social img {
+        margin: 10px auto 0px auto;
+        width: 20%;
+        float: none;
+    }
+      
+}
+
+footer {
+    color: #ffffff;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-family: "Quicksand";
+    font-size: 1em;
+}
+

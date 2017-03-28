@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=”UTF-8”>
+	<title>Milkbox Bakery</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="fonts/bigjohnweb/stylesheet.css">
+<link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="images/favicon.ico">
+    
+<!-- jquery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 1000, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+</script>
+</head>
+<div id="top"></div>
+<body>
+<nav>
+    <ul>
+        <div class="logo"><img src="images/logo.svg"></div>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about" id="button2">ABOUT</a></li>
+        <li><a href="#goodies">GOODIES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+
+    </ul>
+</nav>
+    <main>
+        <div id="home">
+            <img src="images/milk.svg">
+                <div class="homecont">
+                    <h1>MILKBOX<br>
+                        BAKERY<br>
+                        OPENING<br>
+                        OCT 2ND 2015
+                    </h1>
+                    <h3>made with 2% milk and 98% love, giving you 100% satisfaction
+                    </h3>
+                </div>
+        </div>
+        
+        <div id="about">
+            <div class="floaties"></div>
+            <div class="aboutcont">
+                <h2>ABOUT US
+                </h2>
+                <div class="info">Milkbox Bakery started in a small rented out kitchen in the heart of downtown Toronto, and now sits on the buzzing block of Bloor and Ossington. Milkbox Bakery will be opening it's doors at 10:00am to Toronto's sweetooths on October 2nd. Milkbox Bakery brings all of your favourite flavours in one place using all natural ingredients and fair trade ingredients. Milk is important to any kind of baked good and we believe that everyone should be able to enjoy it. We bake with every type of milk, from your wholesome 3% to almond and cashew milk for the vegans and those who are lactose intolerant. 
+<p><em>Join us tomorrow and we will be giving out free samples as well as amazing $2 deals!</em></p>
+                </div>
+            </div>
+            <div class="floaties2"></div>
+        </div>
+
+    <div id="goodies">
+        <div class="goodiecont">
+            <div class="gtitle">OUR GOODS</div>
+            <div class="donut">
+                <img src="images/donut.svg">
+                <h4>DONUTS</h4>
+                <div class="info">We serve a wide selection of donuts, ranging from the infamous jelly filled donuts to deadly cronuts. We ensure a soft and sweet bite every time.  Halloween is just around the corner and we'll be serving 3 limited and unique flavours using our secret baking tips and tricks to give you delicious treats! <p>Our recommended flavours: Reese's Piece Crunch, The Simpson, and The Cookiedoughnut.</p></div>
+                </div>
+            <div class="cupcake">
+                <img src="images/cupcake.svg">
+                <h4>CUPCAKES</h4>
+                <div class="info">Milkbox Bakery started up with cupcakes and will end up with you coming back for more. Our cupakes are baked fresh daily and everything is made in store from the chocolate chips to our quirky decorations.We believe a great cupcake starts with it's body; just the right level of fluff and moisture. If your cupcake does not meet these specifcations, we will be delighted to give another one of your choice. In addition, 2 new flavours will be released in celebration of halloween! <p>Our recommended flavours include: Red Vixen Velvet, Frost &amp; Bites, and Cocoanut.</p></div>
+                </div>
+            <div class="cookie">
+                <img src="images/cookie.svg">
+                <h4>COOKIES</h4>
+                <div class="info">The smell of our freshly baked cookies will have you in nostalgia. Our cookies use wholesome and simple ingredients, reminding you of your grandmother's homemade baking. We bake our cookies and care about our customers just as much as grandma cared about you and will provide you with a free glass of milk with any cookie purchase. We will be releasing 1 new seasonal cookie this Halloween to keep things... spcookie? <p>Our recommended flavours inlcude: Dunk in Love, Tough Cookie, and Chocolate Moose Cookie Doe.</p></div>
+                </div>
+        </div>
+    </div>
+        
+        <div id="contact">
+            <div class="contacont">
+            <img src="images/map.png">
+                <div class="continfo">
+                    <div class="sec">
+            <h3>FIND</h3>
+            <h4>236 Ossington Avenue</h4>
+            <h5>Toronto, ON M5H 1T8</h5>
+            </div>
+                    <div class="sec">
+            <h3>HOURS</h3>
+            <h5>Sun: 11am - 7pm
+                <br>Mon - Thurs: 10am - 10pm
+                <br>Fri - Sat: 10am - 1am
+            </h5>
+                    </div>
+                    <div class="sec">
+            <h3>CONTACT</h3>
+            <h5>milkbox@bakery.com</h5>
+            <div class="social">
+                <img src="images/fb.svg">
+                <img src="images/twit.svg">
+                <img src="images/insta.svg">
+            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer><h5>&copy; Milkbox Bakery</h5></footer>
+    </main>
+</body>
+</html>
