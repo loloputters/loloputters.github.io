@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=”UTF-8”>
+	<title>Loretta</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="fonts/gt_cinetype/stylesheet.css">
+<link rel="stylesheet" href="fonts/loretta/stylesheet.css">
+<link rel="stylesheet" href="css/jquery.ui.theme.css" type="text/css" />
+<link rel="stylesheet" href="css/jquery.ui.slider.css" type="text/css" />
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+<link rel="icon" type="image/png" href="images/favicon.ico">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.ui.core.js"></script>
+<script src="js/jquery.ui.widget.js"></script>
+<script src="js/jquery.ui.mouse.js"></script>
+<script src="js/jquery.ui.slider.js"></script>
+<script src="js/main.js"></script>
+<!-- jquery -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+		<script>
+		$(document).ready(function(){
+			$('a[href^="#"]').on('click',function (e) {
+			    e.preventDefault();
+
+			    var target = this.hash;
+			    var $target = $(target);
+
+			    $('html, body').stop().animate({
+			        'scrollTop': $target.offset().top
+			    }, 1000, 'swing', function () {
+			        window.location.hash = target;
+			    });
+			});
+		});
+		</script>
+<!-- jquery nav -->
+<script>
+$(document).ready(function(){
+
+$(".characters, .fontsize, .details").hide();
+
+$("nav ul li:nth-child(1)").click(function(){
+		$(".about").fadeToggle(1500);
+		$(".characters, .fontsize, .details").hide();
+});
+$("nav ul li:nth-child(2)").click(function(){
+		$(".characters").fadeToggle(1500);
+		$(".about, .fontsize, .details").hide();
+});
+$("nav ul li:nth-child(3)").click(function(){
+		$(".fontsize").fadeToggle(1500);
+		$(".about, .characters, .details").hide();
+});
+$("nav ul li:nth-child(4)").click(function(){
+		$(".details").fadeToggle(1500);
+		$(".about, .characters, .fontsize").hide();
+});
+});
+</script>
+<!-- end of jquery nav -->
+
+
+</head>
+<body>
+
+<div id="main">
+			<div id="title">Loretta Serif</div>
+			<div class="block"></div>
+			<div id="subtitle">An on-screen typeface for the visually impaired.</div>
+			<div class="gt">Designed by Laura Pitt</div>
+
+			<span class="scroll-btn">
+	<span class="mouse">
+		<span>
+		</span>
+	</span>
+</span>
+</div>
+
+<div id="bottom">
+	<nav>
+	    <ul>
+	        <li><a href="#">ABOUT</a></li>
+	        <li><a href="#">CHARACTERS</a></li>
+	        <li><a href="#">FONT SIZE</a></li>
+	        <li><a href="#">DETAILS</a></li>
+	    </ul>
+	</nav>
+	<div class ="about">
+	<h2>
+		ABOUT
+	</h2>
+	<div class="block2"></div>
+			<div class="aboutinfo">
+					<p>In a world that is continually progressing digitally and at an exponential rate,
+						the use and understanding of technology is expected. For awhile, screens have
+						been getting smaller and smaller, in which designers must figure out a way to
+						display information so that it is easy for the user to comprehend and read
+						-- a huge part of this is affected by the typefaces used on the interface.</p>
+
+					<p>LORETTA SERIF addresses these issuses that those with visual impairments struggle
+						with using a larger x-height, slightly wider proportions, as well as lengthening
+						ascenders and descenders. The typefaces that inspired this typeface were
+						LORA and RETINA.
+					</p>
+			</div>
+
+			<div class="letterset">
+				Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
+			</div>
+	</div>
+
+
+
+	<div class ="characters">
+		<h2>CHARACTERS</h2>
+		<div class="block2"></div>
+				<div class ="set1">
+					<h3>uppercase
+					</h3>
+					<div class="upperc">
+						A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+					</div>
+				</div>
+						<div class ="set2">
+							<h3>lowercase
+							</h3>
+								<div class="lowerc">
+									a b c d e f g h i j k l m n o p q r s t u v w x y z
+								</div>
+							</div>
+									<div class ="set3">
+										<h3>numbers
+										</h3>
+											<div class="numbers">
+												1234567890
+											</div>
+										</div>
+													<div class ="set4">
+														<h3>special
+														</h3>
+															<div class="special">
+																!?@.,:;{}[]-_
+															</div>
+														</div>
+	</div>
+
+	<div class ="fontsize">
+		<h2>FONT-SIZE</h2>
+		<div class="block2"></div>
+
+		<div class="examples">
+		    <div class="column">
+		        <div id="slider1"></div>
+		        <p>
+		            <input type="text" id="font_size" />
+		        </p>
+		    </div>
+		    <div class="box">Grumpy wizards make toxic brew for the evil Queen and Jack.</div>
+		    <div style="clear:both"></div>
+		</div>
+	</div>
+
+	<div class ="details">
+		<h2>DETAILS</h2>
+		<div class="block2"></div>
+		<img src="images/hamburgefontivs.png">
+	</div>
+
+
+
+</div>
+
+</body>
+
+
+</html>
