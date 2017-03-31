@@ -1,9 +1,11 @@
 $(document).ready(function(){
 
-    /* Pretty sure you don't need this piece but if you do its here
-
+    // Preventing Scroll Reset
 	$('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
+
+        /* this part wasn't been used
+
 	    var target = this.hash;
 	    var $target = $(target);
 	    $('html, body').stop().animate({
@@ -11,9 +13,10 @@ $(document).ready(function(){
 	    }, 1000, 'swing', function () {
 	        window.location.hash = target;
 	    });
+
+        */
 	});
 
-    */
 
 
     // Handles the navigation
@@ -35,6 +38,7 @@ $(document).ready(function(){
     		$(".details").fadeToggle(1500);
     		$(".about, .characters, .fontsize").hide();
     });
+
 
 
     // Slider Events: called whenever it changes
