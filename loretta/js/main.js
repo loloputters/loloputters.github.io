@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
 
-        /* this part wasn't been used
+
 
 	    var target = this.hash;
 	    var $target = $(target);
@@ -14,12 +14,21 @@ $(document).ready(function(){
 	        window.location.hash = target;
 	    });
 
-        */
 	});
 
+	// Handles appearance of navigation
+
+	window.addEventListener("scroll",function() {
+	   if(window.scrollY > 600) {
+	      $('nav').fadeIn();
+	   }
+	   else {
+	      $('nav').fadeOut();
+	   }
+	},false);
 
 
-    // Handles the navigation
+    /* Handles the navigation
     $(".characters, .fontsize, .details").hide();
 
     $("nav ul li:nth-child(1)").click(function(){
@@ -39,7 +48,7 @@ $(document).ready(function(){
     		$(".about, .characters, .fontsize").hide();
     });
 
-
+*/
 
     // Slider Events: called whenever it changes
     $(".slider").on("input", function(){
