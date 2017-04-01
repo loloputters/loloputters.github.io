@@ -1,72 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset=”UTF-8”>
+	<meta charset=”UTF-8”>
 	<title>Loretta</title>
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="fonts/gt_cinetype/stylesheet.css">
-<link rel="stylesheet" href="fonts/loretta/stylesheet.css">
-<link rel="stylesheet" href="css/jquery.ui.theme.css" type="text/css" />
-<link rel="stylesheet" href="css/jquery.ui.slider.css" type="text/css" />
-<link rel="stylesheet" href="css/main.css" type="text/css" />
-<link rel="icon" type="image/png" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="fonts/gt_cinetype/stylesheet.css">
+	<link rel="stylesheet" href="fonts/loretta/stylesheet.css">
 
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	<link rel="icon" type="image/png" href="images/favicon.ico">
 
-<!-- jquery -->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.ui.core.js"></script>
-<script src="js/jquery.ui.widget.js"></script>
-<script src="js/jquery.ui.mouse.js"></script>
-<script src="js/jquery.ui.slider.js"></script>
-<script src="js/main.js"></script>
-
-		<script>
-		$(document).ready(function(){
-			$('a[href^="#"]').on('click',function (e) {
-			    e.preventDefault();
-
-			    var target = this.hash;
-			    var $target = $(target);
-
-			    $('html, body').stop().animate({
-			        'scrollTop': $target.offset().top
-			    }, 1000, 'swing', function () {
-			        window.location.hash = target;
-			    });
-			});
-		});
-		</script>
-<!-- jquery nav -->
-<script>
-$(document).ready(function(){
-
-$(".characters, .fontsize, .details").hide();
-
-$("nav ul li:nth-child(1)").click(function(){
-		$(".about").fadeToggle(1500);
-		$(".characters, .fontsize, .details").hide();
-});
-$("nav ul li:nth-child(2)").click(function(){
-		$(".characters").fadeToggle(1500);
-		$(".about, .fontsize, .details").hide();
-});
-$("nav ul li:nth-child(3)").click(function(){
-		$(".fontsize").fadeToggle(1500);
-		$(".about, .characters, .details").hide();
-});
-$("nav ul li:nth-child(4)").click(function(){
-		$(".details").fadeToggle(1500);
-		$(".about, .characters, .fontsize").hide();
-});
-});
-</script>
-<!-- end of jquery nav -->
-
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- my script -->
+	<script src="js/main.js"></script>
 
 </head>
+
 <body>
 
 <div id="main">
@@ -76,11 +26,11 @@ $("nav ul li:nth-child(4)").click(function(){
 			<div class="gt">Designed by Laura Pitt</div>
 
 			<span class="scroll-btn">
-	<span class="mouse">
-		<span>
-		</span>
-	</span>
-</span>
+				<span class="mouse">
+					<span>
+					</span>
+				</span>
+			</span>
 </div>
 
 <div id="bottom">
@@ -92,6 +42,7 @@ $("nav ul li:nth-child(4)").click(function(){
 	        <li><a href="#">DETAILS</a></li>
 	    </ul>
 	</nav>
+
 	<div class ="about">
 	<h2>
 		ABOUT
@@ -151,13 +102,16 @@ $("nav ul li:nth-child(4)").click(function(){
 														</div>
 	</div>
 
+
 	<div class ="fontsize">
 		<h2>FONT-SIZE</h2>
 		<div class="block2"></div>
 
 		<div class="examples">
 		    <div class="column">
-		        <div id="slider1"></div>
+				<!-- you can change the min, max, and initial values here <3 it can be styled with CSS -->
+				<input class="slider" type="range" name="points" value="18" min="5" max="100">
+
 		        <p>
 		            <input type="text" id="font_size" />
 		        </p>
@@ -172,7 +126,6 @@ $("nav ul li:nth-child(4)").click(function(){
 		<div class="block2"></div>
 		<img src="images/hamburgefontivs.png">
 	</div>
-
 
 
 </div>
