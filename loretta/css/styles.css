@@ -27,23 +27,42 @@ body {
 }
 
 .box{
-  -moz-border-radius:5px;
   width:50%;
   margin: 10px 50px;
   padding:10px;
   float:left;
   position: relative;
+  font-family: "loretta", serif;
+  border: none;
+  overflow: visible;
+  -webkit-appearance: none;
+}
+
+textarea {
+  font-size: 14px;
+  resize: none;
+  overflow: visible;
+}
+
+textarea:focus {
+  -webkit-appearance: none;
+  outline: none;
+  resize: none;
 }
 
 #font_size {
   color: #ff0000;
   border: none;
   background:none;
-  font-family: "gt_cinetypemono", monospace;
+  font-family: "chestregular", monospace;
   font-size: 12px;
 }
 
 .slider {
+}
+
+input [type=value] {
+  opacity: 1;
 }
 
 input[type=range] {
@@ -124,7 +143,7 @@ nav a {
     padding: 0px 7px 0px 8px;
     color: #141414;
     display: block;
-    font-family: 'gt_cinetypemono', sans-serif;
+    font-family: 'chestregular', sans-serif;
     font-weight: 700;
     font-size: 0.7em;
     text-align: left;
@@ -139,10 +158,7 @@ nav a {
 
 nav a:hover {
     opacity: 1;
-    -webkit-transition: 0.3s ease-out;
-    -moz-transition: 0.3s ease-out;
-    -o-transition: 0.3s ease-out;
-    transition: 0.3s ease-out;
+    transition: 0.3s ease-in-out;
 }
 
 nav a:active {
@@ -155,21 +171,24 @@ nav a:active {
   width: 100%;
   margin: auto;
   position: relative;
-  height: 800px;
+  height: auto;
 }
 
 
-#about, #characters, #fontsize, #details {
+#about, #characters, #fontsize, #details, #scenario {
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
+  transition-timing-function: ease-in-out;
 }
 
 #about {
   background-color:rgba(255, 246, 245, 0.4);
+  padding-bottom: 450px;
 }
 
 #characters {
   background-color:rgba(255, 246, 245, 0.8);
+  padding-bottom: 400px;
 }
 
 #fontsize {
@@ -177,24 +196,114 @@ nav a:active {
 }
 
 #details {
-  background-color:rgba(255, 246, 245, 0.7)
+  background-color:rgba(255, 246, 245, 0.7);
 }
 
-.aboutcont, .characterscont, .fontsizecont, .detailscont {
+#scneario {
+  background-color:rgba(255, 255, 255, 0.7);
+}
+
+
+.aboutcont, .fontsizecont, .detailscont, .scenariocont {
   width: 850px;
   margin: auto;
   position: relative;
   overflow: auto;
   padding: 100px 0px;
+  overflow: visible;
+}
+
+.scenariocont img{
+  position: relative;
+  float: left;
+  margin: 50px 0px 0px  150px;
+  padding-bottom: 200px;
+}
+
+.scenariocont p{
+  margin: 170px 0px 0px 120px;
+  text-align: center;
+  width: 250px;
+  position: relative;
+  float: left;
+  font-family: "chestregular", monospace;
+  font-size: 14px;
+}
+
+.characterscont {
+  width: 850px;
+  margin: auto;
+  position: relative;
+  overflow: visible;
+  padding: 100px 0px;
+}
+
+.label1, .label2, .label3 {
+  font-size: 12px;
+  font-family: "chestregular", monospace;
+  position: relative;
+  float: left;
+}
+
+.label1 {
+  margin: -3px 0px 0px 30px;
+}
+
+.label2 {
+  margin: 115px 0px 0px -250px;
+}
+
+.label3 {
+  margin: 235px 0px 0px -340px;
+}
+
+.detail1 {
+  font-family: "chestregular", monospace;
+  position: relative;
+  float: left;
+  width: 295px;
+  margin: 175px 0px 0px -20px;
 }
 
 #details img {
   width: 50%;
-  margin:;
+  position: relative;
+  float: left;
 }
 
-.aboutinfo {
-  width: 280px;
+#m {
+  margin: 650px 0px 100px 150px;
+  position: relative;
+  overflow: visible;
+  padding-bottom: 200px;
+}
+
+.trapinfo, .serifinfo, .slantinfo {
+  font-family: "chestregular", monospace;
+  font-size: 12px;
+  margin: -40px 0px 30px -60px;
+  width: 150px;
+  line-height: 18px;
+}
+
+.trapinfo {
+    margin: -40px 0px 30px -60px;
+}
+
+.serifinfo {
+    margin: 10px 0px 30px -40px;
+}
+
+.slantinfo {
+    margin: -400px 0px 30px 630px;
+    position: relative;
+    z-index: 9999;
+}
+
+
+.aboutinfo p {
+  width: 300px;
+  font-family: "chestregular", monospace;
   position: relative;
   float: left;
   margin: -20px 50px 0px 0px;
@@ -210,13 +319,18 @@ nav a:active {
   letter-spacing: 2px;
   line-height: 80px;
   width: 350px;
-  margin: -10px 0px 0px 75px;
+  margin: -30px 0px 200px 75px;
 }
 
 .set1, .set2, .set3, .set4 {
   position: relative;
   float: left;
   margin-top: -25px;
+
+}
+
+.set1 a:hover, .set2 a:hover, .set3 a:hover, .set4 a:hover{
+  text-decoration: none;
 }
 
 .set1, .set3 {
@@ -232,7 +346,6 @@ nav a:active {
   margin-top: 40px;
 }
 
-
 .upperc, .lowerc, .numbers, .special {
   font-family: "loretta" , serif;
   color: #141414;
@@ -240,14 +353,50 @@ nav a:active {
   text-align: left;
   float: left;
   position: relative;
-  letter-spacing: 1px;
+  letter-spacing: -2px;
   line-height: 80px;
   margin-top: -10px;
+  z-index: 999 ;
+}
+
+.upperc a, .lowerc a, .numbers a, .special a {
+  text-decoration: none;
+  color: #141414;
+}
+
+.tooltip{
+    display: inline;
+    overflow: visible;
+}
+
+.tooltip:hover:after{
+	text-align: center;
+	font-size: 1200%;
+  color: #ff0000;
+  content: attr(title);
+  padding: 100px 100px 100px 100px;
+  position: absolute;
+  margin: -50px 0px 0px -200px;
+  overflow: visible;
+  z-index: -1 ;
+}
+
+a {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited, a:focus {
+  text-decoration: none;
 }
 
 h2 {
   margin-top: 15px;
-  font-family: "gt_cinetypemono";
+  font-family: "chestregular";
   color: #ff0000;
   font-size: 18px;
   letter-spacing: 1px;
@@ -255,14 +404,14 @@ h2 {
 
 h3 {
   margin-top: 25px;
-  font-family: "gt_cinetypemono";
+  font-family: "chestregular";
   color: #ff0000;
   font-size: 14px;
   letter-spacing: 1px;
 }
 
 .gt {
-  font-family: "gt_cinetypemono" , monospace;
+  font-family: "chestregular" , monospace;
   color: #141414;
   font-size: 14px;
   margin: auto;
@@ -287,7 +436,7 @@ p {
 .block2 {
   width: 40px;
   height: 2px;
-  margin: 40px 0px;
+  margin: 40px 0px 80px 0px;
   background-color: #ff0000;
 }
 
@@ -300,14 +449,23 @@ p {
     padding: 10px 0px 100px 0px;
 }
 
-#title {
+#title, #titleoverlay {
   font-family: "loretta" , serif;
   font-size: 50px;
   position: relative;
   width: 200px;
   margin: auto;
-  margin-top: 75px;
+  margin-top: -121px;
   color: #ff0000;
+}
+
+#titleoverlay {
+  left: -1.5px;
+  margin-top: 65px;
+  color: #fff;
+  position: relative;
+  z-index: 99999;
+  -webkit-text-stroke: 1px #ff0000;
 }
 
 #subtitle {
@@ -370,10 +528,82 @@ p {
   }
 }
 
-@media screen and (max-width: 700px) {
-
-}
 @media screen and (max-width: 610px) {
+
+  nav ul li {
+    display: none;
+  }
+
+  #bottom {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .aboutcont, .characterscont, .fontsizecont, .detailscont, .scenariocont {
+    width: 400px;
+    margin-left: 40px;
+  }
+
+
+  .characterscont {
+    padding-bottom: 300px;
+  }
+
+  .aboutinfo {
+    position: relative;
+    float: left;
+  }
+
+  .letterset {
+    position: relative;
+    float: left;
+    margin: 50px 0px 0px 0px;
+    width: 300px;
+    font-size: 28px;
+    line-height: 50px;
+  }
+
+  .set1, .set2, .set3, .set4 {
+    margin: -50px 0px 80px 0px;
+    width: 300px;
+  }
+
+  .upperc, .lowerc, .numbers, .special {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    margin-top: 8px;
+  }
+
+  .column {
+    float:left;
+    position: relative;
+    width: 200px;
+    left: -15px;
+  }
+
+  .examples {
+    width: 500px;
+  }
+
+  textarea {
+    float: left;
+    position: relative;
+    left: -55px;
+  }
+
+  .label2, .label3 {
+    margin: 53px 0px 0px -150px;
+  }
+
+  .label3 {
+    margin: 110px 0px 0px -195px;
+  }
+
+  .detail1 {
+    margin: 50px 0px 0px 0px;
+  }
+
 
 }
 
@@ -479,5 +709,16 @@ p {
 	-webkit-animation: ani-mouse 2.5s linear infinite;
 	-moz-animation: ani-mouse 2.5s linear infinite;
 	animation: ani-mouse 2.5s linear infinite;
-
+}
   /* end of scrolling mouse */
+
+footer {
+  font-size: 10px;
+  font-family: "chestregular", monospace;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0px;
+  margin: 0 auto;
+  margin-top: 500px;
+  text-align: center;
+  }

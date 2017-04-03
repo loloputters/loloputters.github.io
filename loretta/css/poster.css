@@ -1,0 +1,326 @@
+@charset "UTF-8";
+/*  Style sheet - Enter name and notes here */
+
+body {
+    font-family: "loretta", serif;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+span {
+    word-spacing: 2px;
+    letter-spacing: 0.2px;
+}
+
+span1 {
+    word-spacing: 20px;
+    letter-spacing: 0.2px;
+}
+
+.container {
+    position: relative;
+	margin: 0 auto;
+	width: 960px;
+    height: 960px;
+    overflow: hidden;
+}
+
+/* LAYOUT 1 */
+
+.rem {
+    margin-right: 80px;
+    letter-spacing: 25px;
+    float: right;
+    width: 645px;
+    font-size: 300px;
+    font-family: "loretta", serif;
+}
+
+.lo {
+    line-height: 255px;
+    margin-left: 125px;
+    margin-top: 375px;
+    width: 420px;
+    height: 230px;
+    font-size: 300px;
+    font-family: 'loretta', serif;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
+.lo a:link, a:visited {
+    -webkit-transition: 0.4s ease-out;
+    -moz-transition: 0.4s ease-out;
+    -o-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
+}
+
+.lo a:hover {
+    margin-left: -150px;
+    -webkit-transition: 0.6s ease-out;
+    -moz-transition: 0.6s ease-out;
+    -o-transition: 0.6s ease-out;
+    transition: 0.6s ease-out;
+}
+
+.c1b1 {
+    font-family: "loretta", serif;
+    font-size: 13px;
+    line-height: 10px;
+    width: 250px;
+    text-align: right;
+    font-style: oblique;
+    margin-top: -180px;
+    margin-left: 70px;
+}
+
+.c1b2 {
+    font-family: "loretta" serif;
+    font-size: 13px;
+    line-height: 37px;
+    letter-spacing: 0.4px;
+    width: 265px;
+    height: 500px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: -225px;
+    margin-left: 330px;
+}
+
+.c1b3 {
+    font-family: "loretta", serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 13px;
+    width: 525px;
+    text-align: right;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    margin-top: -595px;
+    margin-left: 490px;
+}
+
+/* LAYOUT 2 */
+
+.k {
+    font-family: 'loretta', serif;
+    font-size: 400px;
+    width: 366px;
+    height: 375px;
+    text-align:center;
+}
+
+.o {
+    font-family: 'loretta', serif;
+    font-size: 300px;
+    width: 265px;
+    margin-top: -200px;
+    margin-left: 175px;
+}
+
+.c2b1 {
+    font-family: 'loretta', serif;
+    font-size: 14px;
+    line-height: 24px;
+    width: 585px;
+    font-style: italic;
+    margin-top: -240px;
+    margin-left: 313px;
+    word-spacing: 0.5px;
+}
+
+.c2b2 {
+    position: static;
+    width: 186px;
+    font-family: "loretta", serif;
+    font-size: 10px;
+    line-height: 43px;
+    text-align: justify;
+    margin-left: 270px;
+    margin-top: 15px;
+}
+
+.c2b3 {
+    width: 454px;
+    font-family: 'loretta', serif;
+    font-weight: bold;
+    font-size: 60px;
+    letter-spacing: 70px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    margin-top: -135px;
+    margin-left: 280px;
+}
+
+.c2b3 a:link {
+    -webkit-transition: 0.4s ease-out;
+    -moz-transition: 0.4s ease-out;
+    -o-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
+}
+
+.c2b3 a:hover {
+    margin-left: -150px;
+    -webkit-transition: 0.4s ease-out;
+    -moz-transition: 0.4s ease-out;
+    -o-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
+}
+
+/* LAYOUT 3 */
+
+.oh {
+    position: absolute;
+    font-family: Times New Roman, serif;
+    font-size: 900px;
+    font-style: italic;
+    font-weight: 20%;
+    width: 350px;
+    margin-left:100px;
+    margin-top: 50px;
+}
+
+.c3b1{
+    float:left;
+    width: 170px;
+    font-family: Gerogia, Times New Roman, serf;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 49px;
+    text-align: right;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+.c3b2 {
+    float: left;
+    font-family: Geneva, Helvetica, serif;
+    font-size: 15px;
+    line-height: 12px;
+    width: 65px;
+    text-align: right;
+    margin-top: 220px;
+}
+
+.c3b3 {
+    float: left;
+    font-family: Verdana, Helvetica, serif;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 10px;
+    width: 84px;
+    margin-top: -;
+    text-align: justify;
+    margin-left: 15px;
+    margin-top: 70px;
+}
+
+.c3b4 {
+    float: left;
+    font-family: Verdana, Helvetica, serif;
+    font-style: italic;
+    font-size: 68px;
+    width:392px;
+    letter-spacing: 40px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    margin-top: 380px;
+    margin-left: 35px;
+}
+
+.c3b4 a:link {
+    -webkit-transition: 0.6s ease-out;
+    -moz-transition: 0.6s ease-out;
+    -o-transition: 0.6s ease-out;
+    transition: 0.6s ease-out;
+}
+
+.c3b4 a:hover {
+    margin-left: 100px;
+    -webkit-transition: 0.6s ease-out;
+    -moz-transition: 0.6s ease-out;
+    -o-transition: 0.6s ease-out;
+    transition: 0.6s ease-out;
+}
+
+/* LAYOUT 4 */
+
+.c4b1 {
+    float: left;
+    width: 430px;
+    font-family: 'Helvetica-light', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: right;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+.c4b2 {
+    float: left;
+    width: 186px;
+    font-family: Courier New, Courier, sans-serif;
+    font-size: 10px;
+    line-height: 71px;
+    text-align: right;
+    margin-left: -175px;
+    margin-top: 460px;
+}
+
+.c4b3 {
+    float: left;
+    width: 580px;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 13px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    margin-left: 260px;
+    margin-top: -310px;
+}
+
+.c4b4 {
+    float: right;
+    width: 290px;
+    font-family: 'Helvetica-light', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: left;
+    margin-top: -595px;
+    margin-right: 90px;
+}
+
+.scelerisque {
+    position: absolute;
+    font-family: Century Gothic, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 20px;
+    margin-top: 240px;
+    margin-left: 300px;
+}
+
+.scelerisque a:link {
+    -webkit-transition: 0.6s ease-out;
+    -moz-transition: 0.6s ease-out;
+    -o-transition: 0.6s ease-out;
+    transition: 0.6s ease-out;
+}
+
+.scelerisque a:hover {
+    margin-left: 75px;
+    -webkit-transition: 0.6s ease-out;
+    -moz-transition: 0.6s ease-out;
+    -o-transition: 0.6s ease-out;
+    transition: 0.6s ease-out;
+}

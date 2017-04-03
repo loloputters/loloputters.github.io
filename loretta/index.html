@@ -5,13 +5,18 @@
 	<title>Loretta</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="fonts/gt_cinetype/stylesheet.css">
+	<link rel="stylesheet" href="fonts/chest/stylesheet.css">
 	<link rel="stylesheet" href="fonts/loretta/stylesheet.css">
-
-	<link rel="stylesheet" href="css/main.css" type="text/css" />
 	<link rel="icon" type="image/png" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/magnify.css">
+<!-- Optional mobile plugin (uncomment the line below to enable): -->
+<!-- <script src="/js/jquery.magnify-mobile.js"></script> -->
+
 
 	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/typed.js" type="text/javascript"></script>
+	<script src="js/Chart.bundle.js" type="text/javascript"></script>
 	<!-- my script -->
 	<script src="js/main.js"></script>
 
@@ -25,10 +30,12 @@
 					<li><a href="#characters">CHARACTERS</a></li>
 					<li><a href="#fontsize">FONT SIZE</a></li>
 					<li><a href="#details">DETAILS</a></li>
+					<li><a href="#scenario">SCENARIO</a></li>
 			</ul>
 	</nav>
 
 <div id="main">
+			<div id="titleoverlay">Loretta Serif</div>
 			<div id="title">Loretta Serif</div>
 			<div class="block"></div>
 			<div id="subtitle">An on-screen typeface for the visually impaired.</div>
@@ -53,14 +60,14 @@
 			<div class="aboutinfo">
 					<p>In a world that is continually progressing digitally and at an exponential rate,
 						the use and understanding of technology is expected. For awhile, screens have
-						been getting smaller and smaller, in which designers must figure out a way to
-						display information so that it is easy for the user to comprehend and read
-						-- a huge part of this is affected by the typefaces used on the interface.</p>
-
-					<p>LORETTA SERIF addresses these issuses that those with visual impairments struggle
+						been getting smaller and smaller, in which <em style ="background-color: red; color: white; padding: 3px 5px 3px 3px;">designers must figure out a way to&nbsp;
+						display information so that it is easy&nbsp; for the user to comprehend and read</em>
+						-- a huge part of this is affected by the typefaces that are used on an interface.
+<br><br>
+						<em style ="background-color: red; color: white; padding: 3px 5px 3px 3px;">LORETTA SERIF</em> addresses these issuses that those with visual impairments struggle
 						with using a larger x-height, slightly wider proportions, as well as lengthening
 						ascenders and descenders. The typefaces that inspired this typeface were
-						LORA and RETINA.
+						 <em style ="background-color: red; color: white; padding: 3px;">LORA and RETINA.</em>
 					</p>
 			</div>
 
@@ -80,28 +87,99 @@
 					<h3>uppercase
 					</h3>
 					<div class="upperc">
-						A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+						<a href="#" title="A" class="tooltip">A</a>
+						<a href="#" title="B" class="tooltip">B</a>
+						<a href="#" title="C" class="tooltip">C</a>
+						<a href="#" title="D" class="tooltip">D</a>
+						<a href="#" title="E" class="tooltip">E</a>
+						<a href="#" title="F" class="tooltip">F</a>
+						<a href="#" title="G" class="tooltip">G</a>
+						<a href="#" title="H" class="tooltip">H</a>
+						<a href="#" title="I" class="tooltip">I</a>
+						<a href="#" title="J" class="tooltip">J</a>
+						<a href="#" title="K" class="tooltip">K</a>
+						<a href="#" title="L" class="tooltip">L</a>
+						<a href="#" title="M" class="tooltip">M</a>
+						<a href="#" title="N" class="tooltip">N</a>
+						<a href="#" title="O" class="tooltip">O</a>
+						<a href="#" title="P" class="tooltip">P</a>
+						<a href="#" title="Q" class="tooltip">Q</a>
+						<a href="#" title="R" class="tooltip">R</a>
+						<a href="#" title="S" class="tooltip">S</a>
+						<a href="#" title="T" class="tooltip">T</a>
+						<a href="#" title="U" class="tooltip">U</a>
+						<a href="#" title="V" class="tooltip">V</a>
+						<a href="#" title="W" class="tooltip">W</a>
+						<a href="#" title="X" class="tooltip">X</a>
+						<a href="#" title="Y" class="tooltip">Y</a>
+						<a href="#" title="Z" class="tooltip">Z</a>
 					</div>
 				</div>
 						<div class ="set2">
 							<h3>lowercase
 							</h3>
 								<div class="lowerc">
-									a b c d e f g h i j k l m n o p q r s t u v w x y z
+									<a href="#" title="a" class="tooltip">a</a>
+									<a href="#" title="b" class="tooltip">b</a>
+									<a href="#" title="c" class="tooltip">c</a>
+									<a href="#" title="d" class="tooltip">d</a>
+									<a href="#" title="e" class="tooltip">e</a>
+									<a href="#" title="f" class="tooltip">f</a>
+									<a href="#" title="g" class="tooltip">g</a>
+									<a href="#" title="h" class="tooltip">h</a>
+									<a href="#" title="i" class="tooltip">i</a>
+									<a href="#" title="j" class="tooltip">j</a>
+									<a href="#" title="k" class="tooltip">k</a>
+									<a href="#" title="l" class="tooltip">l</a>
+									<a href="#" title="m" class="tooltip">m</a>
+									<a href="#" title="n" class="tooltip">n</a>
+									<a href="#" title="o" class="tooltip">o</a>
+									<a href="#" title="p" class="tooltip">p</a>
+									<a href="#" title="q" class="tooltip">q</a>
+									<a href="#" title="r" class="tooltip">r</a>
+									<a href="#" title="s" class="tooltip">s</a>
+									<a href="#" title="t" class="tooltip">t</a>
+									<a href="#" title="u" class="tooltip">u</a>
+									<a href="#" title="v" class="tooltip">v</a>
+									<a href="#" title="w" class="tooltip">w</a>
+									<a href="#" title="x" class="tooltip">x</a>
+									<a href="#" title="y" class="tooltip">y</a>
+									<a href="#" title="z" class="tooltip">z</a>
 								</div>
 							</div>
 									<div class ="set3">
 										<h3>numbers
 										</h3>
 											<div class="numbers">
-												1234567890
+												<a href="#" title="1" class="tooltip">1</a>
+												<a href="#" title="2" class="tooltip">2</a>
+												<a href="#" title="3" class="tooltip">3</a>
+												<a href="#" title="4" class="tooltip">4</a>
+												<a href="#" title="5" class="tooltip">5</a>
+												<a href="#" title="6" class="tooltip">6</a>
+												<a href="#" title="7" class="tooltip">7</a>
+												<a href="#" title="8" class="tooltip">8</a>
+												<a href="#" title="9" class="tooltip">9</a>
+												<a href="#" title="0" class="tooltip">0</a>
 											</div>
 										</div>
 													<div class ="set4">
 														<h3>special
 														</h3>
 															<div class="special">
-																!?@.,:;{}[]-_
+																<a href="#" title="!" class="tooltip">!</a>
+																<a href="#" title="?" class="tooltip">?</a>
+																<a href="#" title="@" class="tooltip">@</a>
+																<a href="#" title="." class="tooltip">.</a>
+																<a href="#" title="," class="tooltip">,</a>
+																<a href="#" title=":" class="tooltip">:</a>
+																<a href="#" title=";" class="tooltip">;</a>
+																<a href="#" title="{" class="tooltip">{</a>
+																<a href="#" title="}" class="tooltip">}</a>
+																<a href="#" title="[" class="tooltip">[</a>
+																<a href="#" title="]" class="tooltip">]</a>
+																<a href="#" title="-" class="tooltip">-</a>
+																<a href="#" title="_" class="tooltip">_</a>
 															</div>
 														</div>
 	</div>
@@ -116,13 +194,13 @@
 		<div class="examples">
 		    <div class="column">
 				<!-- you can change the min, max, and initial values here <3 it can be styled with CSS -->
-				<input class="slider" type="range" name="points" value="18" min="5" max="100">
+				<input class="slider" type="range" name="points" value="14" min="5" max="100">
 
 		        <p>
-		            <input type="text" id="font_size" />
+		            <input type="text" id="font_size" value="14 px" />
 		        </p>
 		    </div>
-		    <div class="box">Grumpy wizards make toxic brew for the evil Queen and Jack.</div>
+		    <textarea type="text" rows="5" cols="30" class="box">Grumpy wizards make toxic brew for the evil Queen and Jack.</textarea>
 		    <div style="clear:both"></div>
 		</div>
 	</div>
@@ -133,12 +211,76 @@
 		<h2>DETAILS</h2>
 		<div class="block2"></div>
 		<img src="images/hamburgefontivs.png">
+		<div class="label1"><big style="font-size: 24px;"><b>532</b></big><br>x-height</div>
+		<div class="label2"><big style="font-size: 24px;"><b>148</b></big><br>ascender</div>
+		<div class="label3"><big style="font-size: 24px;"><b>390</b></big><br>descender</div>
+		<p class="detail1"><big style="color: #ff0000; font-size: 18px;">Simple <a href="http://www.howdesign.com/resources-education/online-design-courses-education/gestalt-theory-typography-design-principles/" target="_blank">Gestalt</a> created by spaces in the past did indeed find preference for serif
+			typefaces.</big>
+			<br><br>
+			Tinker commented that perceived
+			legibility was due to great extent to <em style ="background-color: red; color: white; padding: 3px;">familiarity with typeface</em>. 40 years ago,
+			sans serif typefaces were not as common as they are now, and if studies were
+			repeated, it would not be surprising to find completely different results.</p>
+<div id="m">
+				<div class="trapinfo"><b><big style="line-height:24px;">ink/light traps</big></b>
+					<br>following <a href="https://frerejones.com/families/retina">Retina</a>, these indents allow greater legibility at smaller font sizes</div>
+			<a href="images/mmm2-large.png">
+			  <img src="images/mmm2.png" alt="Sample image" class="zoom" style ="width: 600px;">
+			</a>
+			<div class="serifinfo"><b><big style="line-height:24px;">driving serif</big></b>
+				<br>following <a href="https://fonts.google.com/specimen/Lora">Lora</a>, these serifs are placed on the right side of each leg.
+			There is also a curve of the leg that goes inwards to emphasize its direction.</div>
+
+			<div class="slantinfo"><b><big style="line-height:24px;">slanted serif</big></b>
+				<br>The slight slant in the serif subtly reinforces movement throughout body text.</div>
+
+</div>
+
+
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+			<script src="js/jquery.magnify.js"></script>
+			<script>
+			var $zoom;
+			$(document).ready(function() {
+			  // Initiate magnification powers
+			  $zoom = $('.zoom').magnify({
+			      afterLoad: function() {
+			        console.log('Magnification powers activated!');
+			      }
+			    });
+			});
+			$('button').click(function() {
+			  $zoom.destroy();
+			});
+			$('html').on({
+			  magnifystart: function() {
+			    console.log('\'magnifystart\' event fired');
+			  },
+			  magnifyend: function() {
+			    console.log('\'magnifyend\' event fired');
+			  }
+			});
+			</script>
 	</div>
 
 </div>
+
+<div id ="scenario">
+	<div class ="scenariocont">
+<h2>
+	SCENARIO
+</h2>
+<div class="block2"></div>
+	<img src="loretta_scenario.gif" style="width: 250px;">
+	<p>Loretta is meant to be used for body copy on-screen on both desktop and mobile.
+		<br><br><a href="https://vimeo.com/211288081" target="_blank">View the mobile protoype.</a></p>
+	</div>
 </div>
 
+</div>
+
+<footer>
+	Thanks to <a href="#">Zilin Deng for Ezra Display Mono</a><br><br>Loretta 2017
+</footer>
 </body>
-
-
 </html>

@@ -50,6 +50,21 @@ $(document).ready(function(){
 
 */
 
+$(".slant").hover(function(){
+		$(".slantinfo").fadeToggle();
+		$(".trapinfo, .serifinfo").hide();
+});
+
+$(".trap, .trap2").hover(function(){
+		$(".trapinfo").fadeToggle();
+		$(".slantinfo, .serifinfo").hide();
+});
+
+$(".serif").hover(function(){
+		$(".serifinfo").fadeToggle();
+		$(".trapinfo, .slantinfo").hide();
+});
+
     // Slider Events: called whenever it changes
     $(".slider").on("input", function(){
         // Assigning it to a variable
@@ -60,8 +75,5 @@ $(document).ready(function(){
         // Setting the actual size of the font
         $('.box').css({ 'font-size': parseInt(size) });
     });
-
-
-
 
 });
