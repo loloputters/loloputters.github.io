@@ -6,7 +6,7 @@
 }
 
 body{
-	font-family: "Ubuntu", sans-serif;
+	font-family: 'officeReg';
 	font-size: 100%;
 	background:#f8f8f8;
 }
@@ -35,6 +35,18 @@ p{
 	background:#f0f0f0;
 	border-radius:5px;
 	border:#CCC 1px solid;
+}
+
+#img {
+  position: relative;
+  width: 50px;
+}
+
+
+#box1{
+	margin:0 auto;
+	text-align:center;
+	margin-top: 100px;
 }
 
 .links{
