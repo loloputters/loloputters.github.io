@@ -523,3 +523,16 @@ document.addEventListener('DOMContentLoaded', function(){
 function newTyped(){ /* A new typed object */ }
 
 function foo(){ console.log("Callback"); }
+
+$( document ).ready(function() {
+
+  window.addEventListener("scroll",function() {
+     if(window.scrollY > 1650) {
+        $('html,body').fadeOut();
+     }
+     else {
+        $('nav').fadeOut();
+     }
+  },false);
+
+});
